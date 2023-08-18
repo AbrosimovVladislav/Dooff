@@ -6,6 +6,7 @@ import com.example.dooff.web.dto.DishDto;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ public class BasicController {
   private final DishService dishService;
   private final DishMapper dishMapper;
 
+  @CrossOrigin
   @GetMapping
   public ResponseEntity<List<DishDto>> getAllDishes() {
     var dishDtos = dishMapper.toDtos(dishService.findAll());
@@ -31,6 +33,7 @@ public class BasicController {
     return ResponseEntity.ok(dishDtos);
   }
 
+  @CrossOrigin
   @GetMapping("/{name}")
   public ResponseEntity<DishDto> getByName(@PathVariable String name){
     var dishDto = dishMapper.toDto(dishService.getByName(name));

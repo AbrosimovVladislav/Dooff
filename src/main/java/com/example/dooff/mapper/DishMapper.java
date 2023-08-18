@@ -17,13 +17,13 @@ public class DishMapper {
     return DishDto.builder()
         .dishId(dish.getDishId())
         .name(dish.getName())
+        .proteins(Math.round(dish.getProteins() * 100.0) / 100.0)
+        .fats(Math.round(dish.getFats() * 100.0) / 100.0)
+        .carbohydrates(Math.round(dish.getCarbohydrates() * 100.0) / 100.0)
         .calories(dish.getCalories())
         .ingredients(dish.getDishIngredients().stream()
             .map(e -> Pair.of(e.getIngredient().getName(), e.getWeight())).toList())
-        .carbohydrates(dish.getCarbohydrates())
-        .proteins(dish.getProteins())
         .type(type(dish.getType()))
-        .fats(dish.getFats())
         .build();
   }
 
