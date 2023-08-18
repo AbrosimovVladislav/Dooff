@@ -18,11 +18,22 @@ public class DishMapper {
         .dishId(dish.getDishId())
         .name(dish.getName())
         .calories(dish.getCalories())
-        .ingredients(dish.getDishIngredients().stream().map(e -> Pair.of(e.getIngredient().getName(), e.getWeight())).toList())
+        .ingredients(dish.getDishIngredients().stream()
+            .map(e -> Pair.of(e.getIngredient().getName(), e.getWeight())).toList())
         .carbohydrates(dish.getCarbohydrates())
         .proteins(dish.getProteins())
+        .type(type(dish.getType()))
         .fats(dish.getFats())
         .build();
+  }
+
+  private String type(Integer typeId) {
+    return switch (typeId) {
+      case 1 -> "Обед";
+      case 2 -> "Ужин";
+      case 3 -> "Десерт";
+      default -> "Обед";
+    };
   }
 
 }

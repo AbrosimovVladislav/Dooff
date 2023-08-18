@@ -19,6 +19,7 @@ public class DishDto {
   private Double fats;
   private Double carbohydrates;
   private Integer calories;
+  private String type;
 
   private List<Pair<String,Integer>> ingredients;
 
