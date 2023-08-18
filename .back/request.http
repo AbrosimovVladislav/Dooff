@@ -5,3 +5,7 @@ Accept: application/json
 ### GET request with a header
 GET localhost:8080/api/v1/basic/recalculate
 Accept: application/json
+
+### GET request with a header
+GET localhost:8080/api/v1/basic/Тако с курицей овощами и сыром
+Accept: application/json

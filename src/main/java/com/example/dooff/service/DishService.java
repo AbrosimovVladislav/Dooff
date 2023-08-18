@@ -71,4 +71,7 @@ public class DishService {
     return Map.of("proteins",proteins,"fats",fats,"carbohydrates",carbohydrates,"calories",calories);
   }
 
+  public DishEntity getByName(String name) {
+    return dishRepo.findByName(name);
+  }
 }

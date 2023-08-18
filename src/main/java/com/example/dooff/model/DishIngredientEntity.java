@@ -16,7 +16,7 @@ import lombok.experimental.Accessors;
 public class DishIngredientEntity {
 
   @Id
-  private String dishIngredientUd;
+  private String dishIngredientId;
 
   private Integer weight;
 

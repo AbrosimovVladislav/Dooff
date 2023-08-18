@@ -7,6 +7,7 @@ import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,6 +29,12 @@ public class BasicController {
   public ResponseEntity<List<DishDto>> recalculateAll(){
     var dishDtos = dishMapper.toDtos(dishService.recalculateAllDishesPFC());
     return ResponseEntity.ok(dishDtos);
+  }
+
+  @GetMapping("/{name}")
+  public ResponseEntity<DishDto> getByName(@PathVariable String name){
+    var dishDto = dishMapper.toDto(dishService.getByName(name));
+    return ResponseEntity.ok(dishDto);
   }
 
 }

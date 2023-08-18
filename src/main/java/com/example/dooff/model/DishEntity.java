@@ -27,6 +27,10 @@ public class DishEntity {
   private Double carbohydrates;
   private Integer calories;
 
+  private Integer type;
+
+  private String comments;
+
   @OneToMany(mappedBy = "dish")
   Set<DishIngredientEntity> dishIngredients;
 
