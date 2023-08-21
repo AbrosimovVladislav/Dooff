@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface IngredientRepo extends JpaRepository<IngredientEntity, Long> {
 
+  IngredientEntity findByName(String name);
 }

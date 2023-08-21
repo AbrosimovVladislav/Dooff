@@ -2,21 +2,25 @@ package com.example.dooff.service;
 
 import com.example.dooff.model.DishEntity;
 import com.example.dooff.model.DishIngredientEntity;
-import com.example.dooff.model.IngredientEntity;
+import com.example.dooff.repo.DishIngredientRepo;
 import com.example.dooff.repo.DishRepo;
+import com.example.dooff.repo.IngredientRepo;
+import com.example.dooff.web.request.CreateDishRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
 public class DishService {
 
   private final DishRepo dishRepo;
+  private final DishIngredientRepo dishIngredientRepo;
+  private final IngredientRepo ingredientRepo;
 
   public List<DishEntity> findAll() {
     return dishRepo.findAll();
@@ -68,10 +72,33 @@ public class DishService {
       calories = calories + (Integer) pfc.get("calories");
     }
 
-    return Map.of("proteins",proteins,"fats",fats,"carbohydrates",carbohydrates,"calories",calories);
+    return Map.of("proteins", proteins, "fats", fats, "carbohydrates", carbohydrates, "calories",
+        calories);
   }
 
   public DishEntity getByName(String name) {
     return dishRepo.findByName(name);
+  }
+
+  @Transactional
+  public DishEntity create(CreateDishRequest request) {
+    DishEntity dish = new DishEntity()
+        .setName(request.getName())
+        .setType(request.getType())
+        .setDishId(dishRepo.getMaxId() + 1);
+    DishEntity saved = dishRepo.save(dish);
+
+    request.getIngredients().stream()
+        .map(e -> {
+          var ingredient = ingredientRepo.findByName(e.getName());
+          return new DishIngredientEntity()
+              .setDishIngredientId(dish.getDishId() + ":" + ingredient.getIngredientId())
+              .setDish(dish)
+              .setWeight(e.getWeight())
+              .setIngredient(ingredient);
+        }).forEach(dishIngredientRepo::save);
+
+    return dishRepo.findById(saved.getDishId())
+        .orElseThrow(() -> new RuntimeException("There is no dish with id:" + saved.getDishId()));
   }
 }

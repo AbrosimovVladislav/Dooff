@@ -3,12 +3,15 @@ package com.example.dooff.web;
 import com.example.dooff.mapper.DishMapper;
 import com.example.dooff.service.DishService;
 import com.example.dooff.web.dto.DishDto;
+import com.example.dooff.web.request.CreateDishRequest;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,6 +40,12 @@ public class BasicController {
   @GetMapping("/{name}")
   public ResponseEntity<DishDto> getByName(@PathVariable String name){
     var dishDto = dishMapper.toDto(dishService.getByName(name));
+    return ResponseEntity.ok(dishDto);
+  }
+
+  @PostMapping("/create")
+  public ResponseEntity<DishDto> create(@RequestBody CreateDishRequest request){
+    var dishDto = dishMapper.toDto(dishService.create(request));
     return ResponseEntity.ok(dishDto);
   }
 

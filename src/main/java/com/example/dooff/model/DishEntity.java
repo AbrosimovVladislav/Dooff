@@ -17,7 +17,6 @@ import lombok.experimental.Accessors;
 public class DishEntity {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long dishId;
 
   private String name;

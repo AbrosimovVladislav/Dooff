@@ -17,9 +17,12 @@ public class DishMapper {
     return DishDto.builder()
         .dishId(dish.getDishId())
         .name(dish.getName())
-        .proteins(Math.round(dish.getProteins() * 100.0) / 100.0)
-        .fats(Math.round(dish.getFats() * 100.0) / 100.0)
-        .carbohydrates(Math.round(dish.getCarbohydrates() * 100.0) / 100.0)
+        .proteins(
+            dish.getProteins() != null ? Math.round(dish.getProteins() * 100.0) / 100.0 : null)
+        .fats(dish.getFats() != null ? Math.round(dish.getFats() * 100.0) / 100.0 : null)
+        .carbohydrates(
+            dish.getCarbohydrates() != null ? Math.round(dish.getCarbohydrates() * 100.0) / 100.0
+                : null)
         .calories(dish.getCalories())
         .ingredients(dish.getDishIngredients().stream()
             .map(e -> Pair.of(e.getIngredient().getName(), e.getWeight())).toList())
