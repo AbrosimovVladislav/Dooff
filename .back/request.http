@@ -7,7 +7,7 @@ GET localhost:8080/api/v1/basic/recalculate
 Accept: application/json
 
 ### GET request with a header
-GET localhost:8080/api/v1/basic/Шоколадный брауни
+GET localhost:8080/api/v1/basic/Куриный отбивные с помидорами и сыром
 Accept: application/json
 
 ### POST
