@@ -7,7 +7,7 @@ GET localhost:8080/api/v1/basic/recalculate
 Accept: application/json
 
 ### GET request with a header
-GET localhost:8080/api/v1/basic/Тако с курицей овощами и сыром
+GET localhost:8080/api/v1/basic/Шоколадный брауни
 Accept: application/json
 
 ### POST
@@ -15,16 +15,33 @@ POST localhost:8080/api/v1/basic/create
 Content-Type: application/json
 
 {
-  "name": "Протеиновый шейк",
-  "type": 3,
+  "name": "Овсяная Каша с Шоколадом",
+  "type": 2,
   "ingredients" : [
     {
-      "name": "Молоко Безлактозное",
-      "weight": 500
+      "name": "Овсянка Шоколадная",
+      "weight": 60
     },
     {
-      "name": "Протеин",
-      "weight": 64
+      "name": "Молоко Безлактозное",
+      "weight": 200
+    }
+  ]
+}
+
+### POST
+POST localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
     }
   ]
 }

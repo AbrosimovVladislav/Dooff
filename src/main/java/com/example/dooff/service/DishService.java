@@ -10,7 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +26,23 @@ public class DishService {
 
   public List<DishEntity> findAll() {
     return dishRepo.findAll();
+  }
+
+  public Pair<Double, Double> summary(List<Pair<String, Double>> summaryRequest) {
+    Double proteins = 0.0;
+    Double calories = 0.0;
+    var info = summaryRequest.stream()
+        .map(e -> Pair.of(dishRepo.findByName(e.getFirst()), e.getSecond()))
+        .map(e -> Pair.of(
+            e.getFirst().getProteins() * e.getSecond(),
+            e.getFirst().getCalories() * e.getSecond()))
+        .toList();
+
+    for (var infoItem : info) {
+      proteins += infoItem.getFirst();
+      calories += infoItem.getSecond();
+    }
+    return Pair.of(proteins, calories);
   }
 
   public List<DishEntity> recalculateAllDishesPFC() {
