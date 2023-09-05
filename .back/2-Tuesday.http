@@ -5,7 +5,7 @@ Content-Type: application/json
 {
   "foodOnAmount" : [
     {
-      "first": "Салат курица ананасы",
+      "first": "Десерт Банановая Овсянка",
       "second": 1
     },
     {
@@ -13,7 +13,7 @@ Content-Type: application/json
       "second": 0.75
     },
     {
-      "first": "Омлет с сыром",
+      "first": "Салат курица фасоль кукуруза",
       "second": 1
     }
   ]

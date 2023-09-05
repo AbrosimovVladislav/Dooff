@@ -1,0 +1,935 @@
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Десерт Банановая Овсянка",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-09-05T102913.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Десерт Банановая Овсянка",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-09-05T102901.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Десерт Банановая Овсянка",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-09-05T102843.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Десерт Банановая Овсянка",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-09-05T102837.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Десерт%20Банановая%20Овсянка
+Accept: application/json
+
+<> 2023-09-05T101519.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/recalculate
+Accept: application/json
+
+<> 2023-09-05T101511.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/create
+Content-Type: application/json
+
+{
+  "name": "Десерт Банановая Овсянка",
+  "type": 2,
+  "ingredients" : [
+    {
+      "name": "Овсянка",
+      "weight": 50
+    },
+    {
+      "name": "Банан",
+      "weight": 220
+    },
+    {
+      "name": "Протеин",
+      "weight": 55
+    },
+    {
+      "name": "Йогурт",
+      "weight": 120
+    },
+    {
+      "name": "Яйцо",
+      "weight": 115
+    }
+  ]
+}
+
+<> 2023-09-05T101505.500.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица ананасы",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-09-05T090844.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Отбивные%20курица%20ананас
+Accept: application/json
+
+<> 2023-09-01T103506.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Отбивные%20курица%20ананас
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+<> 2023-08-31T185315.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+<> 2023-08-31T133945.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+<> 2023-08-31T111212.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Тако%20с%20курицей%20овощами%20и%20сыром
+Accept: application/json
+
+<> 2023-08-31T105756.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+<> 2023-08-31T105744.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-31T105732.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+<> 2023-08-30T212308.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Тако%20с%20курицей%20овощами%20и%20сыром
+Accept: application/json
+
+<> 2023-08-30T212258.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Салат%20курица%20фасоль%20кукуруза
+Accept: application/json
+
+<> 2023-08-30T212239.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-30T212226.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+###
+
+GET http://localhost:8080/api/v1/basic/Протеиновый%20шейк
+Accept: application/json
+
+<> 2023-08-30T105650.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Гречка%20с%20молоком
+Accept: application/json
+
+<> 2023-08-30T085946.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Куриный%20отбивные%20с%20помидорами%20и%20сыром
+Accept: application/json
+
+<> 2023-08-30T085806.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Куриный отбивные с помидорами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-30T085645.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Куриный отбивные с помидорами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T153309.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Куриный%20отбивные%20с%20помидорами%20и%20сыром
+Accept: application/json
+
+<> 2023-08-29T152205.200.json
+
+###
+
+GET http://localhost:8080/api/v1/basic/Овсяная%20Каша%20с%20Шоколадом
+Accept: application/json
+
+<> 2023-08-29T152110.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Куриный отбивные с помидорами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T152013.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица ананасы",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T152006.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    },
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151957.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151941.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    },
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151933.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151920.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151907.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 0.5
+    }
+  ]
+}
+
+<> 2023-08-29T151859.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151849.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151830.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151825.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Отбивные курица ананас",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151817.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Тако с курицей овощами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151805.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151742.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Куриный отбивные с помидорами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151734.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Куриный отбивные с помидорами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151726.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Куриный отбивные с помидорами и сыром",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 1
+    },
+    {
+      "first": "Овсяная Каша с Шоколадом",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151707.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица ананасы",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151700.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица ананасы",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.5
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151650.200.json
+
+###
+
+POST http://localhost:8080/api/v1/basic/summary
+Content-Type: application/json
+
+{
+  "foodOnAmount" : [
+    {
+      "first": "Салат курица фасоль кукуруза",
+      "second": 1
+    },
+    {
+      "first": "Протеиновый шейк",
+      "second": 0.75
+    },
+    {
+      "first": "Омлет с сыром",
+      "second": 1
+    },
+    {
+      "first": "Гречка с молоком",
+      "second": 1
+    }
+  ]
+}
+
+<> 2023-08-29T151643.200.json
+
+###
+

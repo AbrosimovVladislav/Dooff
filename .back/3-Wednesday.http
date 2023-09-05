@@ -1,3 +1,8 @@
+# Протеиновый шейк +
+# Куриный отбивные с помидорами и сыром +
+# Овсяная Каша с Шоколадом +
+# Гречка с молоком +
+
 ### Monday Summary
 POST localhost:8080/api/v1/basic/summary
 Content-Type: application/json
@@ -24,5 +29,5 @@ Content-Type: application/json
 }
 
 ### GET exact dish
-GET localhost:8080/api/v1/basic/Овсяная Каша с Шоколадом
+GET localhost:8080/api/v1/basic/Протеиновый шейк
 Accept: application/json
